@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "CudeProjext", "CudeProjext.dwproj", "{77CF0B03-B223-423B-A451-A2C05B153DB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77CF0B03-B223-423B-A451-A2C05B153DB9}.Development|Default.ActiveCfg = Development
+		{77CF0B03-B223-423B-A451-A2C05B153DB9}.Development|Default.Build.0 = Development
+		{77CF0B03-B223-423B-A451-A2C05B153DB9}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADABC702-3138-4B23-BCDE-EC7403B465D9}
+	EndGlobalSection
+EndGlobal
