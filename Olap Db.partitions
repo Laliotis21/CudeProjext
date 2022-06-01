@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6d4a77ae-b82c-4ba1-a6cf-b63583c1faf4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bbbfaa20-bda8-4f34-bd88-76c81f50aae7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Olap Db</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Date Dimension</ID>
       <Partitions>
-        <Partition dwd:design-time-name="d26c7a27-e71e-4eb7-8984-01bd28bf6ebe">
+        <Partition dwd:design-time-name="1c6a8aae-4ee5-4ad1-a351-a3b4a3ed765a">
           <ID>Date Dimension</ID>
           <Name>Date Dimension</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="02aa0ec1-7b76-4df4-a5e4-dffdab8a7e20">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cb6a5071-1b3f-4dd5-8e25-3b0ae515de43">
             <DataSourceViewID>Olap Db</DataSourceViewID>
             <TableID>dbo_DateDimension</TableID>
           </Source>
@@ -22,38 +22,18 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>Sales Fact</ID>
+      <ID>Customer Dimension</ID>
       <Partitions>
-        <Partition dwd:design-time-name="7efd245a-a445-455b-bd6a-7a78e1970482">
-          <ID>Sales Fact</ID>
-          <Name>Sales Fact</Name>
+        <Partition dwd:design-time-name="bb8c2353-130f-4dd5-a5b4-7ae227ff17b1">
+          <ID>Customer Dimension</ID>
+          <Name>Customer Dimension</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e0829d51-76ba-4d33-a9f3-181cf357efab">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4b9cbcde-4b9b-46d0-ab29-a98da840dc3a">
             <DataSourceViewID>Olap Db</DataSourceViewID>
-            <TableID>dbo_sales_fact</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
-      <ID>Product Dimension</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="cba485af-b7cc-4055-8e88-522cfa7b8f26">
-          <ID>Product Dimension</ID>
-          <Name>Product Dimension</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b031e1ad-59c4-4b8b-893f-6cd0dbc2e154">
-            <DataSourceViewID>Olap Db</DataSourceViewID>
-            <TableID>dbo_ProductDimension</TableID>
+            <TableID>dbo_CustomerDimension</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
